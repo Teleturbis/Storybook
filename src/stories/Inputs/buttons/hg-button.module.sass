@@ -1,0 +1,57 @@
+@import "../../../_variables"
+
+.button
+  border-radius: 16px
+  border: 1px solid #000
+  position: relative
+  font-weight: 600
+  cursor: pointer
+
+.button_normal
+  background-color: $teal-500
+  color: $gray-900
+
+  &:hover
+    background-color: $teal-600
+
+.button_outlined
+  background-color: white
+  border-radius: 16px
+  border-color: $global-background
+  color: black
+
+  &:hover
+    background-color: $global-background
+    color: white
+    border-width: 0
+
+.button_disabled
+  background-color: $global-background
+  color: black
+  opacity: 0.5
+  cursor: not-allowed
+
+.button__icon
+  position: absolute
+  top: 25%
+  height: 1.5rem
+
+.button__icon_right
+  right: 0.75rem
+
+.button__icon_left
+  left: 0.75rem
+
+.button_big
+  padding: 0.75rem 0.75rem
+  font-size: 1.25rem
+
+.button_small
+  padding: 0.25rem 0.5rem
+  font-size: 0.75rem
+
+.button_width
+  width: 100%
+
+.button_link
+  color: $global-background

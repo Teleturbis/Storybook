@@ -1,0 +1,199 @@
+// TODO: Split into smaller variable files - colors.scss, fonts.scss etc.
+$black: hsl(0 0% 4%) !default
+$black-bis: hsl(0 0% 7%) !default
+$black-ter: hsl(0 0% 14%) !default
+
+$grey-darker: hsl(0 0% 21%) !default
+$grey-dark: #323231 !default
+$grey: hsl(0 0% 48%) !default
+$grey-light: hsl(0 0% 71%) !default
+$grey-lighter: hsl(0 0% 86%) !default
+
+$white-ter: hsl(0 0% 96%) !default
+$white-bis: hsl(0 0% 98%) !default
+$white: hsl(0 0% 100%) !default
+
+$orange: hsl(14 100% 53%) !default
+$yellow: hsl(48 100% 67%) !default
+$green: hsl(141 71% 48%) !default
+$turquoise: hsl(171 100% 41%) !default
+$cyan: hsl(204 86% 53%) !default
+$blue: hsl(217 71% 53%) !default
+$purple: hsl(271 100% 71%) !default
+$red: hsl(348 100% 61%) !default
+
+$primary: #06d8e3
+$twitter: #4099ff
+$family-primary: 'Asap', sans-serif
+$transparent: transparent
+
+$white: #fff
+$black: #363636
+$transparent: transparent
+
+$teal-900: #24404f
+$teal-800: #285e72
+$teal-700: #0b8194
+$teal-600: #0ab
+$teal-500: #00d5e0
+$teal-400: #62dfe2
+$teal-300: #8ee9e6
+$teal-200: #b1f2ec
+$teal-100: #c5f6ef
+$teal-80: #d1f8f2
+$teal-60: #dcfaf5
+$teal-40: #e8fbf9
+$teal-20: #f3fdfc
+
+$gray-900: #323231
+$gray-800: #464645
+$gray-700: #5a5a59
+$gray-600: #70706f
+$gray-500: #868686
+$gray-400: #9d9d9d
+$gray-300: #b5b5b4
+$gray-200: #cdcdcd
+$gray-100: #e6e6e6
+$gray-80: #ebebeb
+$gray-60: #f0f0f0
+$gray-40: #f5f5f5
+$gray-20: #fafafa
+
+$yellow-900: #464000
+$yellow-800: #8c8100
+$yellow-700: #d3c100
+$yellow-600: #ffec1a
+$yellow-500: #fff260
+$yellow-400: #fff580
+$yellow-300: #fff7a0
+$yellow-200: #fffabf
+$yellow-100: #fffcdf
+$yellow-80: #fffde5
+$yellow-60: #fffdec
+$yellow-40: #fffef2
+$yellow-20: #fffef9
+
+$red-900: #4a121c
+$red-800: #942437
+$red-700: #d1435b /* error */
+$red-600: #db6270
+$red-500: #e57d86
+$red-400: #ed989d
+$red-300: #f3b1b5
+$red-200: #f9cbcd
+$red-100: #fde5e6
+$red-80: #fdeaeb
+$red-60: #feeff0
+$red-40: #fef5f5
+$red-20: #fffafa
+
+$light: $gray-20
+$light-invert: $black
+$dark: $teal-800
+$dark-invert: $teal-100
+$info: $primary
+$info-invert: $white
+$success: $teal-300
+$success-invert: $teal-800
+$warning: $yellow-200
+$warning-invert: $yellow-900
+$danger: $red-500
+$danger-invert: $white
+
+$radius-xsmall: 0.125rem
+$radius-small: 0.25rem
+$radius: 0.375rem
+$radius-large: 0.5rem
+$radius-xlarge: 0.75rem
+
+$radius: 0.375rem
+$input-radius: 0.375rem
+$input-background-color: $white
+$tabs-border-bottom-color: $gray-200
+$control-radius: 0.375rem
+
+// Typography
+
+$family-monospace: monospace !default
+$render-mode: optimizeLegibility !default
+
+$size-1: 3rem !default
+$size-2: 2.5rem !default
+$size-3: 2rem !default
+$size-4: 1.5rem !default
+$size-5: 1.25rem !default
+$size-6: 1rem !default
+$size-7: 0.75rem !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-medium: 500 !default
+$weight-semibold: 600 !default
+$weight-bold: 700 !default
+
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+$text: $grey-dark !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+// Code colors
+
+$code: $red !default
+$code-background: $background !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+// Link colors
+
+$link: $teal-600 !default
+$link-visited: $purple !default
+
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+
+$link-focus: $grey-darker !default
+$link-focus-border: $teal-500 !default
+
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+// Typography
+$family-de: $family-monospace !default
+
+$size-small: $size-7 !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+
+// Spacing
+
+$block-spacing: 1.5rem !default
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default
+
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default
+
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default
+$widescreen-enabled: true !default
+
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default
+$fullhd-enabled: true !default
+
+// Miscellaneous
+
+$easing: ease-out !default
+$speed: 86ms !default
