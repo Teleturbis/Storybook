@@ -1,4 +1,4 @@
-import Button from './HgButton';
+import Button from './HgButton.tsx';
 
 export default {
   title: 'Input/Button',
@@ -19,9 +19,6 @@ export const Link = Template.bind({});
 
 Normal.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   size: 'big',
   state: '',
   icon: '',
@@ -31,9 +28,6 @@ Normal.args = {
 
 Link.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   size: 'big',
   state: 'link',
   icon: '',
@@ -43,9 +37,6 @@ Link.args = {
 
 Disabled.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   state: 'disabled',
   size: 'big',
   icon: '',
@@ -54,9 +45,6 @@ Disabled.args = {
 
 Icon.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   icon: 'delete',
   size: 'big',
   state: '',
@@ -65,9 +53,6 @@ Icon.args = {
 
 Outlined.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   state: 'outlined',
   size: 'big',
   icon: '',
@@ -76,9 +61,6 @@ Outlined.args = {
 
 Small.args = {
   label: 'Button',
-  func: () => {
-    console.log('Button clicked');
-  },
   size: 'small',
   state: '',
   icon: '',

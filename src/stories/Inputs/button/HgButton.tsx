@@ -8,10 +8,11 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/outline';
 import css from './hg-button.module.sass';
+import React from 'react';
 
 function HgButton({ label, func, state, icon, size, width, disabled }) {
   const [buttonState, setButtonState] = useState(css.button_normal);
-  const [buttonIcon, setButtonIcon] = useState('');
+  const [buttonIcon, setButtonIcon] = useState(<></>);
   const [buttonSize, setSize] = useState(css.button_big);
 
   const [ButtonDisabled, setButtonDisabled] = useState(false);
@@ -77,7 +78,7 @@ function HgButton({ label, func, state, icon, size, width, disabled }) {
         break;
 
       default:
-        setButtonIcon('');
+        setButtonIcon(<></>);
         break;
     }
 
@@ -134,7 +135,7 @@ function HgButton({ label, func, state, icon, size, width, disabled }) {
       className={`${css.button} ${buttonState} ${buttonSize}`}
     >
       {label}
-      {buttonIcon === '' ? null : buttonIcon}
+      {buttonIcon === <></> ? null : buttonIcon}
     </button>
   );
 }
